@@ -26,6 +26,6 @@ RUN pip install -r requirements.txt
 EXPOSE 5000
 
 # Run the application:
-COPY app.py .
-COPY models.yml .
+COPY src/app.py .
+COPY src/models.yml .
 CMD ["python", "app.py"]
