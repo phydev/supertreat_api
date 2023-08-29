@@ -255,7 +255,7 @@ paths:
                 tumor_region:
                   type: string
                   description: The tumor region
-                  enum: [oropharynx, oral cavity, hypopharynx, larynx]
+                  enum: [oropharynx]
                 hpv_status:
                   type: string
                   description: The HPV status, only positive in this model
