@@ -75,7 +75,6 @@ paths:
                   enum:
                     - positive
                     - negative
-                    - unknown
       responses:
         '200':
           description: Survival probability and the time
@@ -366,7 +365,7 @@ paths:
                 hpv_status:
                   type: string
                   description: The HPV status, only required if tumor region is oropharynx
-                  enum: [positive, negative, unknown]
+                  enum: [positive, negative]
       responses:
         200:
           description: survival probability with confidence intervals and the time
@@ -455,7 +454,7 @@ paths:
                 hpv_status:
                   type: string
                   description: The HPV status, only required if tumor region is oropharynx
-                  enum: [positive, negative, unknown]
+                  enum: [positive, negative]
       responses:
         200:
           description: survival probability with confidence intervals and the time
@@ -544,7 +543,7 @@ paths:
                 hpv_status:
                   type: string
                   description: The HPV status, only required if tumor region is oropharynx
-                  enum: [positive, negative, unknown]
+                  enum: [positive, negative]
       responses:
         200:
           description: survival probability with confidence intervals and the time
@@ -711,3 +710,4 @@ paths:
                     example: ["High / Low", "High / Low", "High / Low"]
         400:
           description: Invalid input parameters
+
